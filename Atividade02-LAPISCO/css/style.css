@@ -1,0 +1,121 @@
+
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+ }
+
+ .center {
+    display: flex;
+    border: 2px solid;
+    min-width: 40%;
+    min-height: 80%;
+
+   
+    background-color: wheat;
+    
+ }
+
+ .infosDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+    min-width: 40%;
+    max-width: 40%;
+
+
+ }
+
+ .imgDiv {
+    min-width: 40%;
+    max-width: 40%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+ }
+
+label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 8%;
+ 
+    color: hsl(158, 36%, 37%);
+    font-size: 1.2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+input {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    flex-direction: column;
+    margin-top: 3%;
+    border-radius: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: hsl(158, 36%, 37%);
+    padding: 4%;
+    width: 60%;
+    border: 2%;
+}
+
+p {
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+button {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    padding: 1%;
+    width: 60%;
+    border: 2px;
+}
+button:active {
+    background-color: rgb(155, 45, 6);
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: orangered;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        flex-direction: column;
+        justify-content: normal;
+    }
+    .imgDiv {
+        min-width: 70%;
+        order: 0;
+    }
+    .infosDiv {
+        min-width: 80%;
+        max-width: 80%;
+        order: 1;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    button {
+        width: 80%;
+    }
+  }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="./css/style.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/script.js"></script>
+  <title>Atividade02</title>
+</head>
+<body>
+  <div class="main">
+      <div class="infosDiv">
+        <h1>Cálculo de IMC</h1>
+          <label for="f1">
+            Digite sua altura (cm)
+            <input type="number" name="height" id="fheight" />
+          </label>
+         
+          <label for="f2">
+            Digite seu peso (Kg)
+            <input type="number" name="weight" id="fweight" />
+          </label>
+          
+          <button onclick="calcIMC(document.getElementById('fweight').value, document.getElementById('fheight').value)">
+            <p>Calcular</p>
+          </button>
+
+      </div>
+      <div class="imgDiv">
+        <img src="./imgs/img1.jpg" alt="Imagem saúde">
+      </div>
+  </div>
+</body>
+</html>
